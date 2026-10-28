@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Сарысудың екінші өмірі: қалдықтан пайдалы өнімге</title>
+<meta name="description" content="«Зерде» республикалық зерттеу жобасы: ірімшік сарысуын тұрмыста және тағамда қолдану. Секция: Экология, адам денсаулығы және психология.">
+<meta name="theme-color" content="#E2F8F0">
+<link rel="preload" as="image" href="assets/iris-finished.webp" fetchpriority="high">
+<style>
+:root{--mint:#06D6A0;--mint2:#B8F0DF;--yellow:#FFC300;--coral:#FF6B6B;--deep:#1B4332;--ink:#24433a;--soft:#4f6f65;
+--card:rgba(255,255,255,.86);--r:24px;--sh:0 10px 30px rgba(27,67,50,.12);
+--sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--serif:Georgia,"Times New Roman",serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:var(--sans);color:var(--ink);line-height:1.55;background:linear-gradient(135deg,#E2F8F0 0%,#DEEFFC 55%,#FFF4D6 100%) fixed;min-height:100vh;overflow-x:hidden;-webkit-text-size-adjust:100%}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+.blobs{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.blob{position:absolute;border-radius:50%;opacity:.55;will-change:transform;animation:float 18s ease-in-out infinite}
+.b1{width:46vmax;height:46vmax;right:-14vmax;top:-12vmax;background:radial-gradient(circle,#FFE08A 0%,rgba(255,224,138,0) 68%)}
+.b2{width:42vmax;height:42vmax;left:-14vmax;bottom:-10vmax;background:radial-gradient(circle,#FFB3B3 0%,rgba(255,179,179,0) 68%);animation-delay:-6s}
+.b3{width:34vmax;height:34vmax;left:40%;top:40%;background:radial-gradient(circle,#9BEBD3 0%,rgba(155,235,211,0) 68%);animation-delay:-11s}
+@keyframes float{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(3vmax,-3vmax,0) scale(1.08)}}
+#bar{position:fixed;left:0;top:0;height:4px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--mint),var(--yellow),var(--coral));z-index:60}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;padding:8px 14px;border-radius:12px;z-index:100}
+.skip:focus{left:8px}
+nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.72);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid rgba(27,67,50,.08)}
+.nav-in{max-width:1120px;margin:auto;display:flex;align-items:center;gap:10px;padding:8px 16px}
+.brand{font-family:var(--serif);font-weight:700;color:var(--deep);text-decoration:none;white-space:nowrap;font-size:17px}
+.links{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1;padding:2px}
+.links::-webkit-scrollbar{display:none}
+.links a{text-decoration:none;font-size:14px;font-weight:600;padding:8px 12px;border-radius:999px;white-space:nowrap;color:var(--soft);min-height:40px;display:inline-flex;align-items:center}
+.links a:hover,.links a.act{background:var(--mint2);color:var(--deep)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:999px;border:0;font:700 16px var(--sans);cursor:pointer;text-decoration:none;color:var(--deep);background:var(--yellow);box-shadow:0 6px 18px rgba(255,195,0,.35);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.mint{background:var(--mint);color:#fff;box-shadow:0 6px 18px rgba(6,214,160,.35)}
+.btn.sm{min-height:40px;padding:0 16px;font-size:14px}
+:focus-visible{outline:3px solid #1B4332;outline-offset:2px}
+.wrap{max-width:1120px;margin:auto;padding:0 18px}
+section{padding:68px 0}
+.tag{display:inline-block;background:var(--coral);color:#fff;font-weight:800;font-size:13px;letter-spacing:.06em;padding:6px 16px;border-radius:999px;margin-bottom:14px}
+h1,h2,h3{font-family:var(--serif);color:var(--deep);line-height:1.15}
+h2{font-size:clamp(28px,4.4vw,42px);margin-bottom:18px}
+h3{font-size:20px;margin-bottom:8px}
+p.lead{font-size:18px;max-width:760px}
+.card{background:var(--card);border-radius:var(--r);box-shadow:var(--sh);padding:24px}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+.photo{border-radius:20px;overflow:hidden;box-shadow:var(--sh);background:#fff;border:6px solid #fff;transition:transform .35s}
+.photo:hover{transform:rotate(0deg) scale(1.03)!important}
+.photo img{width:100%;height:auto}
+.photo figcaption{padding:8px 10px;font-size:13px;color:var(--soft);text-align:center;background:#fff}
+/* hero */
+.hero{padding:44px 0 30px}
+.hero-in{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center}
+.eyebrow{font-weight:700;font-size:13px;letter-spacing:.04em;color:var(--soft);margin-bottom:12px}
+h1{font-size:clamp(34px,6vw,64px);background:linear-gradient(120deg,var(--deep) 30%,#0b8f6c);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:18px}
+.chip{display:inline-block;background:#fff;border-radius:999px;padding:10px 18px;font-weight:700;box-shadow:var(--sh);margin:0 8px 10px 0}
+.collage{position:relative;height:min(78vw,540px)}
+.collage .photo{position:absolute;width:52%}
+.c1{left:2%;top:6%;transform:rotate(-5deg);animation:bob 7s ease-in-out infinite}
+.c2{right:0;top:0;width:48%!important;transform:rotate(4deg);animation:bob 8s ease-in-out -2s infinite}
+.c3{right:6%;bottom:0;width:46%!important;transform:rotate(-3deg);animation:bob 9s ease-in-out -4s infinite}
+@keyframes bob{0%,100%{translate:0 0}50%{translate:0 -10px}}
+.ticker{overflow:hidden;white-space:nowrap;background:var(--deep);color:#fff;padding:12px 0;margin:26px 0 0}
+.ticker span{display:inline-block;padding-left:100%;animation:tick 28s linear infinite;font-weight:700;letter-spacing:.04em}
+@keyframes tick{to{transform:translateX(-100%)}}
+/* stats */
+.stat{text-align:center;position:relative;overflow:hidden}
+.stat::before{content:"";position:absolute;left:0;top:0;right:0;height:8px;background:var(--c,var(--mint))}
+.num{font-family:var(--serif);font-size:clamp(38px,7vw,54px);font-weight:700;color:var(--deep)}
+.stat p{color:var(--soft);font-size:15px}
+.facts{list-style:none;display:grid;gap:10px;margin:14px 0}
+.facts li{background:var(--card);padding:14px 18px;border-radius:16px;box-shadow:var(--sh);display:flex;gap:12px;align-items:flex-start}
+.facts li::before{content:"";flex:none;width:12px;height:12px;border-radius:50%;background:var(--mint);margin-top:8px}
+/* goals */
+.task{display:flex;gap:12px;align-items:center;background:var(--card);border-radius:18px;padding:14px 16px;box-shadow:var(--sh);font-weight:700}
+.task b{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;color:#fff;font-family:var(--serif);font-size:19px;background:var(--c)}
+.goal{background:linear-gradient(120deg,var(--mint),#43e3b9);color:#fff;border-radius:var(--r);padding:26px;box-shadow:var(--sh);margin-bottom:18px}
+.goal small{font-weight:800;letter-spacing:.08em;opacity:.9}
+.goal p{font-size:clamp(19px,3vw,26px);font-family:var(--serif);font-weight:700;margin-top:6px;color:#fff}
+/* theory */
+.donut-wrap{display:grid;grid-template-columns:minmax(220px,300px) 1fr;gap:24px;align-items:center}
+.donut{width:100%;max-width:300px;margin:auto}
+.donut circle{fill:none;stroke-width:5.5;transition:stroke-width .25s,opacity .25s;cursor:pointer}
+.donut text{font-family:var(--serif);fill:var(--deep);text-anchor:middle}
+.legend{display:grid;gap:8px}
+.legend button{display:flex;align-items:center;gap:10px;text-align:left;border:2px solid transparent;background:#fff;border-radius:14px;padding:10px 14px;font:600 15px var(--sans);color:var(--ink);cursor:pointer;min-height:44px}
+.legend button i{width:14px;height:14px;border-radius:50%;flex:none}
+.legend button[aria-pressed=true]{border-color:var(--deep)}
+.legend b{margin-left:auto;font-family:var(--serif)}
+#cinfo{margin-top:12px;background:#fff;border-radius:16px;padding:14px 18px;min-height:64px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;margin-top:22px}
+.step .photo{margin-bottom:10px}
+.step b{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--coral);color:#fff;margin-right:8px;font-family:var(--serif)}
+/* tabs */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.tab{border:0;background:rgba(255,255,255,.8);padding:0 20px;min-height:46px;border-radius:999px;font:700 15px var(--sans);color:var(--soft);cursor:pointer;box-shadow:0 3px 10px rgba(27,67,50,.08)}
+.tab[aria-selected=true]{background:var(--deep);color:#fff}
+[role=tabpanel][hidden]{display:none}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-bottom:18px}
+.pill{display:inline-block;padding:8px 16px;border-radius:999px;font-weight:700;margin:0 8px 8px 0;background:var(--c,#fff);color:var(--deep)}
+.warn{background:#FFF1D6;border-left:6px solid var(--yellow);padding:14px 18px;border-radius:14px;margin:14px 0;font-size:15px}
+.calc{background:#fff;border-radius:20px;padding:20px;margin-top:16px}
+input[type=range]{width:100%;accent-color:var(--mint);height:32px}
+label{font-weight:700;display:block;margin-bottom:4px}
+.out{font-family:var(--serif);font-size:clamp(26px,5vw,38px);color:var(--deep);font-weight:700}
+/* video */
+.vbox{max-width:420px;margin:auto;border-radius:28px;overflow:hidden;box-shadow:var(--sh);border:8px solid #fff;background:#000}
+video{width:100%;height:auto;aspect-ratio:9/16;background:#000}
+/* survey */
+.bars{display:grid;gap:12px;margin-top:10px}
+.row{display:grid;grid-template-columns:minmax(120px,38%) 1fr;gap:12px;align-items:center}
+.row span.l{font-size:15px;font-weight:600}
+.track{height:30px;background:#e7f3ee;border-radius:999px;overflow:hidden;position:relative}
+.fill{height:100%;width:0;border-radius:999px;background:linear-gradient(90deg,var(--mint),#7be9c6);transition:width 1s cubic-bezier(.2,.8,.2,1);display:flex;align-items:center;justify-content:flex-end;padding-right:10px;color:var(--deep);font-weight:800;font-size:13px;white-space:nowrap;min-width:2px}
+.fill.top{background:linear-gradient(90deg,var(--coral),#ff9a9a)}
+.groups{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.opt{border:2px solid #cfe9df;background:#fff;border-radius:16px;padding:12px 16px;font:600 15px var(--sans);color:var(--ink);cursor:pointer;min-height:48px;text-align:left}
+.opt:hover{border-color:var(--mint)}
+.opt[aria-pressed=true]{background:var(--mint);border-color:var(--mint);color:#fff}
+.q{margin-bottom:18px}
+.q h4{font-size:16px;margin-bottom:8px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+#quizRes{display:none;background:linear-gradient(120deg,#FFF4D6,#E2F8F0);border-radius:20px;padding:20px;margin-top:10px}
+/* fair */
+.split{height:34px;border-radius:999px;overflow:hidden;display:flex;background:#eee;margin:12px 0}
+.split i{display:block;height:100%;transition:width .5s;display:flex;align-items:center;justify-content:center;font-style:normal;font-weight:800;font-size:13px;color:var(--deep);overflow:hidden;white-space:nowrap}
+.inputs{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+input[type=number]{width:100%;padding:12px;border-radius:12px;border:2px solid #cfe9df;font:700 16px var(--sans)}
+.total{background:var(--coral);color:#fff;border-radius:20px;padding:18px;text-align:center;margin-top:12px}
+.total .out{color:#fff}
+/* future */
+.fut{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.fut div{background:var(--card);border-radius:18px;padding:16px;box-shadow:var(--sh);font-weight:600;display:flex;gap:10px}
+.fut div::before{content:"→";color:var(--coral);font-weight:900}
+.ai{position:relative}
+.badge{position:absolute;right:8px;top:8px;background:var(--deep);color:#fff;font-size:11px;font-weight:800;padding:3px 9px;border-radius:999px}
+footer{padding:40px 0 60px;background:rgba(255,255,255,.6);margin-top:20px}
+footer small{color:var(--soft)}
+.dlist{display:grid;gap:10px;max-width:820px}
+.di{background:var(--card);border-radius:18px;box-shadow:var(--sh);overflow:hidden;border-left:8px solid var(--mint)}
+.di:nth-child(3n+2){border-left-color:var(--yellow)}.di:nth-child(3n){border-left-color:var(--coral)}
+.di summary{cursor:pointer;list-style:none;padding:14px 18px;display:flex;gap:14px;flex-wrap:wrap;align-items:baseline;min-height:48px}
+.di summary::-webkit-details-marker{display:none}
+.di summary b{font-family:var(--serif);color:var(--deep);min-width:140px}
+.di summary span{font-weight:700}
+.di p{padding:0 18px 16px;color:var(--soft)}
+.timer{position:fixed;right:14px;bottom:14px;z-index:70;font-family:var(--sans)}
+.tbtn{width:56px;height:56px;border-radius:50%;border:0;background:var(--deep);color:#fff;font-size:22px;cursor:pointer;box-shadow:var(--sh)}
+.tpanel{display:none;position:absolute;right:0;bottom:66px;width:230px;background:#fff;border-radius:20px;box-shadow:var(--sh);padding:16px;text-align:center}
+.tpanel.on{display:block}
+.tpanel .out{font-size:44px}
+.tpanel .row2{display:flex;gap:6px;justify-content:center;margin-top:10px;flex-wrap:wrap}
+.tpanel button{border:0;border-radius:999px;padding:0 14px;min-height:40px;font:700 14px var(--sans);cursor:pointer;background:var(--mint2);color:var(--deep)}
+.tpanel button.go{background:var(--mint);color:#fff}
+iframe.sv{width:100%;height:760px;border:0;border-radius:18px;background:#fff;margin-top:14px;box-shadow:var(--sh)}
+.jury-only{display:none}
+.jury .jury-only{display:block}
+.jury [data-identity],.jury [data-face]{display:none!important}
+@media (max-width:820px){.hero-in{grid-template-columns:1fr}.donut-wrap{grid-template-columns:1fr}.row{grid-template-columns:1fr}.brand{display:none}section{padding:52px 0}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Негізгі мазмұнға өту</a>
+<div id="bar" aria-hidden="true"></div>
+<div class="blobs" aria-hidden="true"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i></div>
+
+<nav aria-label="Негізгі навигация"><div class="nav-in">
+<a class="brand" href="#top">Сарысу 2.0</a>
+<div class="links" id="links">
+<a href="#relevance">Өзектілік</a><a href="#goals">Мақсат</a><a href="#theory">Теория</a><a href="#exp">Тәжірибе</a><a href="#diary">Күнделік</a><a href="#video">Бейне</a><a href="#survey">Сауалнама</a><a href="#fair">Жәрмеңке</a><a href="#end">Қорытынды</a>
+</div>
+<a class="btn mint sm" id="surveyBtn" href="#survey" style="display:none" target="_blank" rel="noopener">Сауалнама ↗</a>
+</div></nav>
+
+<main id="main">
+<header class="hero" id="top"><div class="wrap hero-in">
+<div>
+<p class="eyebrow">«ЗЕРДЕ» РЕСПУБЛИКАЛЫҚ ЗЕРТТЕУ ЖОБАЛАРЫ МЕН ШЫҒАРМАШЫЛЫҚ ЖҰМЫСТАРЫНЫҢ КОНКУРСЫ · ОБЛЫСТЫҚ КЕЗЕҢ</p>
+<h1>Сарысудың екінші өмірі: қалдықтан пайдалы өнімге</h1>
+<p class="chip">Экология, адам денсаулығы және психология</p>
+<p class="chip" data-identity>Автор: Айназ, 7-сынып</p>
+<p class="jury-only chip">Шифр: ______</p>
+<p style="margin:10px 0 22px;font-size:18px;max-width:520px">Ірімшік жасағанда қалатын сарысу — төгілетін қалдық па, әлде пайдалы шикізат па? Тәжірибемен тексердік.</p>
+<a class="btn" href="#exp">Тәжірибелерді көру ↓</a>
+</div>
+<div class="collage" aria-hidden="false">
+<figure class="photo c1"><img src="assets/iris-finished.webp" width="516" height="666" alt="Сарысудан жасалған ирис конфеттері" fetchpriority="high"></figure>
+<figure class="photo c2" data-face><img src="assets/iris-forming.webp" width="516" height="561" alt="Ирис конфетін қалыптау" decoding="async"></figure>
+<figure class="photo c3"><img src="assets/whey-pouring.webp" width="516" height="516" alt="Сарысуды қамырға құю" decoding="async"></figure>
+</div>
+</div>
+<div class="ticker" aria-hidden="true"><span>♻ Қалдық емес — құнды ресурс! &nbsp;&nbsp;•&nbsp;&nbsp; ирис конфеті &nbsp;&nbsp;•&nbsp;&nbsp; ыдыс жуу &nbsp;&nbsp;•&nbsp;&nbsp; бауырсақ &nbsp;&nbsp;•&nbsp;&nbsp; печенье &nbsp;&nbsp;•&nbsp;&nbsp; сауалнама &nbsp;&nbsp;•&nbsp;&nbsp; жәрмеңке &nbsp;&nbsp;•&nbsp;&nbsp;</span></div>
+</header>
+
+<section id="relevance"><div class="wrap">
+<span class="tag reveal">ӨЗЕКТІЛІГІ</span>
+<h2 class="reveal">Сарысу көбіне төгіліп кетеді</h2>
+<div class="grid g2" style="align-items:center">
+<div>
+<ul class="facts reveal">
+<li>10 л сүттен ≈ 1 кг ірімшік шығады, ал ≈ 9 л сарысу қалады.</li>
+<li>Сарысуда ақуыз, лактоза және минералдар бар.</li>
+<li>Төгілген сарысу су мен топыраққа жүктеме түсіреді.</li>
+</ul>
+<div class="grid g3">
+<div class="card stat reveal" style="--c:var(--coral)"><div class="num"><span data-count="53" data-dec="0">53</span> %</div><p>сарысуды төгіп тастайды</p></div>
+<div class="card stat reveal" style="--c:var(--yellow)"><div class="num"><span data-count="57.3" data-dec="1">57,3</span> %</div><p>қалай пайдалануды білмейді</p></div>
+<div class="card stat reveal" style="--c:var(--mint)"><div class="num"><span data-count="117" data-dec="0">117</span></div><p>адам онлайн сауалнамаға қатысты</p></div>
+</div>
+</div>
+<figure class="photo reveal" style="transform:rotate(2deg);max-width:420px;margin:auto"><img loading="lazy" decoding="async" src="assets/curds-ladle.webp" width="636" height="846" alt="Сүт ұйып, ірімшік бөлінуде, жан-жағында сарысу"><figcaption>Ірімшік ұйығанда сарысу бөлінеді</figcaption></figure>
+</div>
+</div></section>
+
+<section id="goals"><div class="wrap">
+<span class="tag reveal">МАҚСАТ · МІНДЕТ · БОЛЖАМ</span>
+<h2 class="reveal">Мақсаты мен міндеттері</h2>
+<div class="goal reveal"><small>МАҚСАТЫ</small><p>Сарысуды қалдық емес, пайдалы шикізат ретінде қолдануға болатынын тәжірибемен тексеру.</p></div>
+<div class="grid g3">
+<div class="task reveal" style="--c:var(--coral)"><b>1</b>Теорияны зерттеу</div>
+<div class="task reveal" style="--c:var(--yellow)"><b>2</b>Ирис конфетін жасау</div>
+<div class="task reveal" style="--c:var(--mint)"><b>3</b>Бауырсақ, печенье пісіру</div>
+<div class="task reveal" style="--c:var(--coral)"><b>4</b>Ыдыс пен шашты жуу</div>
+<div class="task reveal" style="--c:var(--yellow)"><b>5</b>Жәрмеңкеде сату</div>
+<div class="task reveal" style="--c:var(--mint)"><b>6</b>Онлайн сауалнама жүргізу</div>
+</div>
+<p class="chip reveal" style="margin-top:18px">Болжам: сарысу тұрмыс пен тағамда жарайды</p>
+</div></section>
+
+<section id="theory"><div class="wrap">
+<span class="tag reveal">ТЕОРИЯ</span>
+<h2 class="reveal">Сарысу неден тұрады?</h2>
+<div class="card reveal">
+<div class="donut-wrap">
+<svg class="donut" id="donut" viewBox="0 0 42 42" role="img" aria-label="Сарысудың құрамы: су 93–94 %, лактоза 4,5–5 %, ақуыз, минералдар, май"><text x="21" y="20" font-size="5.2" font-weight="700">93–94 %</text><text x="21" y="26" font-size="3.2">су</text></svg>
+<div><div class="legend" id="legend"></div><div id="cinfo" aria-live="polite">Бөлікті басыңыз — түсініктемесі шығады.</div></div>
+</div>
+<p style="margin-top:12px;font-size:14px;color:var(--soft)">Орташа шамалар; нақты құрам сүтке және ірімшік технологиясына байланысты өзгереді.</p>
+</div>
+<div class="grid g2" style="margin-top:18px">
+<div class="card reveal"><h3>Тәтті сарысу</h3><p>Ірімшікті ұйытқы ферментпен ұйытқанда алынады. рН ≈ 6,0–6,6, дәмі жұмсақ.</p></div>
+<div class="card reveal"><h3>Қышқыл сарысу</h3><p>Сүзбені қышқылмен ұйытқанда алынады. рН ≈ 4,3–4,6, дәмі ащымтал.</p></div>
+</div>
+<h3 style="margin-top:28px" class="reveal">Сарысу қалай пайда болады?</h3>
+<div class="steps">
+<div class="step reveal"><figure class="photo"><img loading="lazy" decoding="async" src="assets/milk-heating.webp" width="621" height="576" alt="Қазандағы жылытылған сүт"></figure><p><b>1</b>Сүт қайнайды</p></div>
+<div class="step reveal"><figure class="photo"><img loading="lazy" decoding="async" src="assets/curds.webp" width="621" height="576" alt="Ұйыған сүт кесектері"></figure><p><b>2</b>Сүт ұйып, ірімшік бөлінеді</p></div>
+<div class="step reveal"><figure class="photo"><img loading="lazy" decoding="async" src="assets/straining-whey.webp" width="621" height="576" alt="Сарысуды дәкемен сүзу"></figure><p><b>3</b>Қалған сұйықтық — сарысу</p></div>
+</div>
+</div></section>
+
+<section id="exp"><div class="wrap">
+<span class="tag reveal">ТӘЖІРИБЕЛЕР</span>
+<h2 class="reveal">Сарысуды қайда қолдандық?</h2>
+<div class="tabs" role="tablist" aria-label="Тәжірибелер" id="expTabs">
+<button class="tab" role="tab" aria-selected="true" aria-controls="p1" id="t1">Ирис конфеті</button>
+<button class="tab" role="tab" aria-selected="false" aria-controls="p2" id="t2" tabindex="-1">Ыдыс жуу</button>
+<button class="tab" role="tab" aria-selected="false" aria-controls="p3" id="t3" tabindex="-1">Шаш жуу</button>
+<button class="tab" role="tab" aria-selected="false" aria-controls="p4" id="t4" tabindex="-1">Бауырсақ, печенье</button>
+</div>
+<div class="card" id="p1" role="tabpanel" aria-labelledby="t1">
+<div class="gallery">
+<figure class="photo"><img loading="lazy" decoding="async" src="assets/iris-boiling.webp" width="636" height="606" alt="Қайнап жатқан қою қоспа"><figcaption>Баяу отта қайнату</figcaption></figure>
+<figure class="photo" data-face><img loading="lazy" decoding="async" src="assets/iris-forming.webp" width="516" height="561" alt="Ирис конфетін қалыптау"><figcaption>Қалыптау</figcaption></figure>
+<figure class="photo"><img loading="lazy" decoding="async" src="assets/iris-finished.webp" width="516" height="666" alt="Дайын ирис конфеттері"><figcaption>Дайын ирис</figcaption></figure>
+<figure class="photo"><img loading="lazy" decoding="async" src="assets/iris-trays.webp" width="636" height="606" alt="Контейнерлерге салынған ирис"><figcaption>Сатуға дайын</figcaption></figure>
+</div>
+<span class="pill" style="--c:var(--coral);color:#fff">3 л сарысу + 300 г қант</span><span class="pill" style="--c:var(--yellow)">баяу отта 1,5–2 сағат</span><span class="pill" style="--c:var(--mint)">≈ 50 дана</span>
+<p><b>1-тәжірибе:</b> 100 г қант — масса қатпай, шәрбат күйінде қалды. <b>2-тәжірибе:</b> 300 г қант — ирис шықты.</p>
+<div class="calc"><label for="irisL">Қанша сарысу алсаңыз? <span id="irisLv">3</span> л</label>
+<input type="range" id="irisL" min="1" max="10" value="3" step="1">
+<p>Қант: <span class="out" id="irisSugar">300</span> г (100 г/л) &nbsp; • &nbsp; шамамен <span class="out" id="irisCnt">50</span> дана</p>
+<small style="color:var(--soft)">Шамалау: 3 л сарысудан ≈ 50 дана шыққан қатынас бойынша; конфет көлеміне қарай өзгереді.</small></div>
+</div>
+<div class="card" id="p2" role="tabpanel" aria-labelledby="t2" hidden>
+<div class="grid g2" style="align-items:center">
+<figure class="photo" style="max-width:360px"><img loading="lazy" decoding="async" src="assets/dish-washing.webp" width="508" height="531" alt="Қара қазанды жуу"><figcaption>Қазанды сарысумен жуу</figcaption></figure>
+<div><span class="pill" style="--c:var(--mint)">Қатқан кір тез кетті</span>
+<p>Сарысудың әлсіз қышқыл ортасы мен жылы сұйықтық қатқан қалдықты жұмсартуы мүмкін (болжам). Жуғаннан кейін ыдысты таза сумен шаю керек.</p>
+<div class="warn">Шектеу: сарысуда сабын жоқ, сондықтан майлы кірге әсері белгісіз; су мен салыстырып уақыт өлшеу — келесі қадам.</div></div>
+</div></div>
+<div class="card" id="p3" role="tabpanel" aria-labelledby="t3" hidden>
+<figure class="photo" style="max-width:260px;margin:0 0 14px"><img loading="lazy" decoding="async" src="assets/hair.webp" width="738" height="925" alt="Сарысумен жуылған жылтыр шаш"><figcaption>Сарысумен жуғаннан кейін</figcaption></figure>
+<span class="pill" style="--c:var(--mint)">Шаш жылтырады</span><span class="pill" style="--c:var(--yellow)">Түбі берік сезілді</span>
+<div class="warn"><b>Маңызды:</b> бұл — бір адамның жеке бақылауы. Сарысу шашты емдейді немесе түсуін тоқтатады деп айтуға болмайды. Мұндай тұжырым үшін көп адамда, маманның қатысуымен зерттеу керек.</div>
+<p>Жуғаннан кейін таза жылы сумен жақсылап шаю қажет.</p></div>
+<div class="card" id="p4" role="tabpanel" aria-labelledby="t4" hidden>
+<div class="gallery">
+<figure class="photo"><img loading="lazy" decoding="async" src="assets/whey-pouring.webp" width="516" height="516" alt="Сарысуды ұнға құю"><figcaption>Сарысуды құю</figcaption></figure>
+<figure class="photo"><img loading="lazy" decoding="async" src="assets/dough-kneading.webp" width="508" height="531" alt="Қамыр илеу"><figcaption>Қамыр илеу</figcaption></figure>
+<figure class="photo"><img loading="lazy" decoding="async" src="assets/baursak-frying.webp" width="508" height="531" alt="Табадағы бауырсақ"><figcaption>Бауырсақ</figcaption></figure>
+</div>
+<span class="pill" style="--c:var(--yellow)">ұсақ бауырсақ — 4 рет</span><span class="pill" style="--c:var(--mint)">печенье — 6 рет</span>
+<p>Қамыр су немесе сүттің орнына сарысумен иленді. Алғашында бауырсаққа ашытқы қоспадым, ол тығыз болды; аз мөлшерде ашытқы қосып, үлпілдетіп пісірдім.</p></div>
+</div></section>
+
+<section id="diary"><div class="wrap">
+<span class="tag reveal">ЗЕРТТЕУ КҮНДЕЛІГІ</span>
+<h2 class="reveal">Жыл бойғы жұмыс: 2025 – 2026</h2>
+<p class="lead reveal" style="margin-bottom:16px">Әр жазбаны басыңыз — не істегенім шығады.</p>
+<div class="dlist"><details class="di reveal"><summary><b>15–30.10.2025</b><span>Идея туды, тақырып бекітілді</span></summary><p>Үйде сарысуды төгейін деп жатқанымда, апам «Төкпе, бұл қалдық емес» деді. Тақырып бекітіліп, бір жылдық жоспар құрылды.</p></details><details class="di reveal"><summary><b>10–25.11.2025</b><span>Сарысуды қайнатып бақылау</span></summary><p>Қоспасыз сарысу қоюланып, кәмпитке айналмады.</p></details><details class="di reveal"><summary><b>05–20.12.2025</b><span>Кітапханадан мәлімет</span></summary><p>Сарысу құрамын (ақуыз, дәрумен, кальций, магний, фосфор) оқыдым.</p></details><details class="di reveal"><summary><b>22.12.2025</b><span>Онлайн сауалнама</span></summary><p>Сауалнама сұрақтары мен кодын жасанды интеллекттен (ChatGPT) алдым, сайтқа салдым. 117 қатысушы.</p></details><details class="di reveal"><summary><b>12–26.01.2026</b><span>Ғаламтордан мәлімет</span></summary><p>Ірімшік пен сарысудың құрамы мен қолданылуын іздедім.</p></details><details class="di reveal"><summary><b>08–22.02.2026</b><span>Ирис рецептін іздеу</span></summary><p>Сарысу мен қанттың нақты мөлшерін тәжірибемен анықтауды шештім.</p></details><details class="di reveal"><summary><b>10–24.03.2026</b><span>Шашқа әсерін тексеру</span></summary><p>Шаш жұмсарды, жылтырады (бір адамның жеке бақылауы).</p></details><details class="di reveal"><summary><b>06–20.04.2026</b><span>Ирис, 1-тәжірибе</span></summary><p>100 г қантпен масса қатпай, шәрбат болды. Сәтсіз: қант аз.</p></details><details class="di reveal"><summary><b>25.04.2026</b><span>Ұсақ бауырсақ пен печенье</span></summary><p>Ашытқысыз бауырсақ тығыз болды; аз ашытқы қосып, үлпілдеттім.</p></details><details class="di reveal"><summary><b>11–27.05.2026</b><span>Ирис, 2-тәжірибе</span></summary><p>3 л сарысу + 300 г қант, баяу отта 1,5–2 сағат: ≈ 50 дана ирис.</p></details><details class="di reveal"><summary><b>08–22.06.2026</b><span>Ыдыс жуу</span></summary><p>Қатқан кір мен май қатты ысқыламай тез кетті.</p></details><details class="di reveal"><summary><b>05–20.07.2026</b><span>Баяндама мен слайд дайындау</span></summary><p>Материалдарды реттедім; жасанды интеллект құралдары да қолданылды (декларацияда көрсетілген).</p></details><details class="di reveal"><summary><b>02.10.2026</b><span>Күзгі жәрмеңке</span></summary><p>Ірімшіктен 2500 + иристен 400 = 2900 теңге.</p></details><details class="di reveal"><summary><b>01–07.10.2026</b><span>Қорғауға дайындық</span></summary><p>Көрме материалдарын реттедім, жетекшімен жаттықтым.</p></details></div>
+</div></section>
+
+<section id="video" data-face><div class="wrap">
+<span class="tag reveal">БЕЙНЕЖАЗБА</span>
+<h2 class="reveal">Жобаның бейнесі</h2>
+<div class="vbox reveal"><video controls preload="metadata" playsinline><source src="video_2026-10-28_10-49-18.mp4" type="video/mp4">Браузеріңіз бейнені қолдамайды.</video></div>
+<div class="warn" style="max-width:640px;margin:16px auto 0">Бейне Grok (ЖИ) көмегімен монтаждалған: кадрлардың бір бөлігі нақты түсірілім, бір бөлігі ЖИ жасаған иллюстрация. Ол тәжірибенің нақты дәлелі емес.</div>
+</div></section>
+
+<section id="survey"><div class="wrap">
+<span class="tag reveal">САУАЛНАМА</span>
+<h2 class="reveal">117 адам не дейді?</h2>
+<div class="card reveal">
+<div class="groups" id="groups"></div>
+<div class="tabs" role="tablist" id="qTabs" aria-label="Сауалнама сұрақтары"></div>
+<h3 id="qTitle"></h3><div class="bars" id="qBars"></div>
+<p id="qNote" style="margin-top:12px;font-size:14px;color:var(--soft)"></p>
+</div>
+<div class="card reveal" style="margin-top:18px">
+<h3>Сен қалай жауап берер едің?</h3>
+<p style="margin-bottom:14px;color:var(--soft)">Жауаптарың ешқайда жіберілмейді, тек экранда салыстырылады.</p>
+<div id="quiz"></div>
+<div id="quizRes" aria-live="polite"></div>
+<button class="btn sm" id="quizReset" style="display:none;margin-top:12px">Қайта бастау</button>
+</div>
+<div class="card reveal" id="svCard" style="margin-top:18px;display:none">
+<h3>Онлайн сауалнама</h3>
+<p style="margin-bottom:12px;color:var(--soft)">Сауалнамаға осы жерде қатысыңыз. Қатысу ерікті.</p>
+<button class="btn mint" id="svLoad">Сауалнаманы осы жерде ашу</button>
+<a class="btn sm" id="svOpen" target="_blank" rel="noopener" style="margin-left:8px">Жаңа терезеде ашу ↗</a>
+<div id="svBox"></div>
+<p style="margin-top:10px;font-size:14px;color:var(--soft)">Сауалнама көрінбесе, «Жаңа терезеде ашу» түймесін басыңыз.</p>
+</div>
+</div></section>
+
+<section id="fair"><div class="wrap">
+<span class="tag reveal">ЖӘРМЕҢКЕ</span>
+<h2 class="reveal">Күзгі жәрмеңке: 2900 теңге</h2>
+<div class="card reveal">
+<div class="inputs">
+<div><label for="cQty">Ірімшік (250 г порция)</label><input type="range" id="cQty" min="0" max="10" value="5"><b id="cQtyV">5</b> порция</div>
+<div><label for="iQty">Ирис конфеті (дана)</label><input type="range" id="iQty" min="0" max="100" value="20"><b id="iQtyV">20</b> дана</div>
+<div><label for="cPrice">Ірімшік бағасы, ₸</label><input type="number" id="cPrice" value="500" min="0" inputmode="numeric"></div>
+<div><label for="iPrice">Ирис бағасы, ₸</label><input type="number" id="iPrice" value="20" min="0" inputmode="numeric"></div>
+</div>
+<div class="split" aria-hidden="true"><i id="sC" style="background:var(--yellow)"></i><i id="sI" style="background:var(--mint)"></i></div>
+<p id="sTxt"></p>
+<div class="total"><div>Жалпы түсім</div><div class="out" id="tot">2900</div></div>
+<div class="warn" style="margin-top:14px">Ірімшік — негізгі өнім, оны сарысудан емес, сүттен жасайды. Сарысудан жасалған өнім — тек ирис конфеті. Жалпы түсімді «сарысудан тапқан табыс» деп айтуға болмайды.</div>
+</div>
+</div></section>
+
+<section id="end"><div class="wrap">
+<span class="tag reveal">ҚОРЫТЫНДЫ</span>
+<h2 class="reveal">Сарысу — қалдық емес, құнды ресурс!</h2>
+<div class="grid g2">
+<div class="card reveal"><h3>Не байқадық</h3><ul class="facts"><li>Болжам негізінен расталды: ирис, ыдыс жуу, қамыр және шаш жуу бақылаулары оң нәтиже берді.</li><li>Сауалнама: адамдардың көбі сарысуды төгеді және қалай пайдалануды білмейді.</li><li>Сарысудан жасалған ирис конфеті жәрмеңкеде сатылды.</li></ul></div>
+<div class="card reveal"><h3>Шектеулер</h3><ul class="facts"><li>Тәжірибелер шағын көлемде жасалды.</li><li>Шаш бақылауы — бір адамның сезімі.</li><li>рН өлшенбеген, сақталу мерзімі зерттелмеген.</li><li>Сауалнама ыңғайлы таңдамаға негізделген.</li></ul></div>
+</div>
+<h3 style="margin-top:28px" class="reveal">Жобаны қалай дамытамыз?</h3>
+<div class="fut reveal">
+<div>Ыдыс жууды сумен салыстырып, уақытын өлшеу</div><div>Сарысудың рН-ын өлшеу</div><div>Сақталу мерзімін зерттеу</div><div>Шаш бақылауын көбірек адаммен, маман кеңесімен қайталау</div><div>Бауырсақты сарысумен және сусыз салыстыру</div><div>Сауалнаманы топтар бойынша талдау</div><div>Шығынды (сүт, қант, контейнер, отын) қосып өзіндік құнды есептеу</div><div>«Сарысуды төкпеңіз» нұсқаулығын жасап тарату</div>
+</div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<h3>Жасанды интеллектті пайдалану туралы</h3>
+<p style="max-width:760px;margin-bottom:14px">Жұмыста Claude (мәтін, кесте, диаграмма, слайд), ChatGPT (иллюстрациялар, сауалнама коды), Grok (бейне) және GitHub Copilot (сайт) қолданылды. Тәжірибелер мен деректерді автор өзі жүргізіп, жинады. ЖИ жасаған суреттер төменде «ЖИ» белгісімен берілген және нақты тәжірибе фотосы емес.</p>
+<div class="gallery" style="max-width:760px">
+<figure class="photo ai"><span class="badge">ЖИ</span><img loading="lazy" decoding="async" src="assets/ai-illustration-1.webp" width="471" height="298" alt="ЖИ жасаған иллюстрация: балалар ирис жеп жатыр"></figure>
+<figure class="photo ai"><span class="badge">ЖИ</span><img loading="lazy" decoding="async" src="assets/ai-illustration-2.webp" width="471" height="298" alt="ЖИ жасаған иллюстрация: ыдыс жуу"></figure>
+<figure class="photo ai"><span class="badge">ЖИ</span><img loading="lazy" decoding="async" src="assets/ai-illustration-3.webp" width="471" height="298" alt="ЖИ жасаған иллюстрация: шашты шаю"></figure>
+</div>
+<small>«Зерде» республикалық зерттеу жобалары мен шығармашылық жұмыстарының конкурсы · 2026</small>
+<p class="jury-only"><small>Шифр: ______</small></p>
+</div></footer>
+
+<div class="timer" id="timer"><div class="tpanel" id="tpanel"><div class="out" id="tdisp">07:00</div><div class="row2"><button class="go" id="tgo">Бастау</button><button id="trs">Қайта</button></div><div class="row2"><button data-m="5">5 мин</button><button data-m="7">7 мин</button></div><small style="color:var(--soft)">Қорғау таймері</small></div><button class="tbtn" id="tbtn" aria-label="Қорғау таймері">⏱</button></div>
+<noscript><div class="wrap"><p class="warn">Сайттың интерактивті бөліктері үшін JavaScript қосыңыз.</p></div></noscript>
+<script type="application/json" id="survey-data">{"n":117,"groups":[{"label":"Оқушы","count":45,"pct":38.5},{"label":"Ата-ана","count":18,"pct":15.4},{"label":"Мұғалім","count":21,"pct":17.9},{"label":"Басқа","count":33,"pct":28.2}],"questions":[{"id":"awareness","title":"Сарысу туралы біледі ме?","type":"single","options":[{"label":"Иә, жақсы білемін","count":28,"pct":23.9},{"label":"Естігенім бар","count":40,"pct":34.2},{"label":"Білмеймін","count":49,"pct":41.9}]},{"id":"dairy","title":"Үйде сүт өнімін жасай ма?","type":"single","options":[{"label":"Иә, жиі","count":24,"pct":20.5},{"label":"Кейде","count":44,"pct":37.6},{"label":"Жоқ","count":49,"pct":41.9}]},{"id":"usage","title":"Үйде сарысуды қалай пайдаланады?","type":"single","options":[{"label":"Төгіп тастаймыз","count":62,"pct":53.0},{"label":"Үйде сарысу болмайды","count":18,"pct":15.4},{"label":"Құрт, ірімшік жасауға","count":7,"pct":6.0},{"label":"Сусын ретінде ішеміз","count":6,"pct":5.1},{"label":"Қамыр илеуге (нан, бауырсақ)","count":6,"pct":5.1},{"label":"Малға, үй құстарына береміз","count":6,"pct":5.1},{"label":"Өсімдіктерді суарамыз","count":6,"pct":5.1},{"label":"Шаш пен тері күтіміне","count":6,"pct":5.1}]},{"id":"harm","title":"Төгу табиғатқа зиян ба?","type":"single","options":[{"label":"Иә, зиян","count":62,"pct":53.0},{"label":"Зияны аз","count":21,"pct":17.9},{"label":"Зиянсыз","count":8,"pct":6.8},{"label":"Білмеймін","count":26,"pct":22.2}]},{"id":"products","title":"Сарысудан қандай өнім көргіңіз келеді? (бірнеше жауап)","type":"multi","options":[{"label":"Сабын, шампунь, косметика","count":49,"pct":41.9},{"label":"Жеміс қосылған сусын","count":15,"pct":12.8},{"label":"Табиғи тыңайтқыш","count":15,"pct":12.8},{"label":"Мал азығына қоспа","count":15,"pct":12.8},{"label":"Биоқаптама, биопластик","count":15,"pct":12.8},{"label":"Протеинді коктейль","count":14,"pct":12.0},{"label":"Нан мен тоқаш","count":14,"pct":12.0},{"label":"Кәмпит, десерт","count":14,"pct":12.0}]},{"id":"importance","title":"Қайта пайдаланудың маңыздылығы (1–5)","type":"scale","average":3.9,"options":[{"label":"5","count":44,"pct":37.6},{"label":"4","count":35,"pct":29.9},{"label":"3","count":24,"pct":20.5},{"label":"2","count":9,"pct":7.7},{"label":"1","count":5,"pct":4.3}]},{"id":"buy","title":"Өнімді сатып алар ма еді?","type":"single","options":[{"label":"Иә","count":49,"pct":41.9},{"label":"Мүмкін","count":51,"pct":43.6},{"label":"Жоқ","count":17,"pct":14.5}]},{"id":"barriers","title":"Пайдалануға не кедергі? (бірнеше жауап)","type":"multi","options":[{"label":"Қалай пайдаланатынын білмеймін","count":67,"pct":57.3},{"label":"Уақыт жетпейді","count":11,"pct":9.4},{"label":"Дәмі ұнамайды","count":10,"pct":8.5},{"label":"Тез бұзылады","count":10,"pct":8.5},{"label":"Дайын өнім сатылмайды","count":10,"pct":8.5},{"label":"Кедергі жоқ","count":10,"pct":8.5}]}],"note":"Қатысушылар ыңғайлы таңдама бойынша онлайн жиналды; нәтижені бүкіл халыққа жалпылауға болмайды."}</script>
+<script>
+(function(){'use strict';
+var $=function(s,r){return (r||document).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+var SURVEY_URL="https://aitolkyn041097-cmyk.github.io/sarysu/"; /* онлайн сауалнама сілтемесі */
+var jury=new URLSearchParams(location.search).get('jury')==='1';
+if(jury){document.documentElement.classList.add('jury');var vl=document.querySelector('#links a[href="#video"]');if(vl)vl.remove();}
+if(SURVEY_URL){var sb=$('#surveyBtn');sb.href=SURVEY_URL;sb.style.display='';}
+var fmt=function(n,d){return Number(n).toFixed(d==null?1:d).replace('.',',')};
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* progress bar */
+var bar=$('#bar'),tick=false;
+function onScroll(){if(tick)return;tick=true;requestAnimationFrame(function(){var h=document.documentElement;var m=h.scrollHeight-h.clientHeight;bar.style.transform='scaleX('+(m>0?h.scrollTop/m:0)+')';tick=false;});}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+/* reveal + counters + nav highlight */
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+$$('.reveal').forEach(function(el){io.observe(el)});
+function countUp(el){var to=parseFloat(el.dataset.count),d=parseInt(el.dataset.dec||'0',10);if(reduce){el.textContent=fmt(to,d);return;}var t0=null;function step(t){if(t0===null)t0=t;var p=Math.min((t-t0)/1200,1),v=to*(1-Math.pow(1-p,3));el.textContent=fmt(v,d);if(p<1)requestAnimationFrame(step);}requestAnimationFrame(step);}
+var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){countUp(e.target);cio.unobserve(e.target);}})},{threshold:.6});
+$$('[data-count]').forEach(function(el){cio.observe(el)});
+var links=$$('#links a'),map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a});
+var sio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.remove('act')});var a=map[e.target.id];if(a){a.classList.add('act');var LK=document.getElementById('links');LK.scrollTo({left:a.offsetLeft-LK.clientWidth/2+a.clientWidth/2,behavior:'smooth'});}}})},{rootMargin:'-45% 0px -50% 0px'});
+Object.keys(map).forEach(function(id){var s=document.getElementById(id);if(s)sio.observe(s)});
+
+/* tabs helper */
+function initTabs(list){var tabs=$$('[role=tab]',list);
+function sel(t){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;var p=document.getElementById(x.getAttribute('aria-controls'));if(p&&p.getAttribute('role')==='tabpanel')p.hidden=!on;});if(list.onsel)list.onsel(t);}
+tabs.forEach(function(t,i){t.addEventListener('click',function(){sel(t)});t.addEventListener('keydown',function(e){var j=-1;if(e.key==='ArrowRight')j=(i+1)%tabs.length;if(e.key==='ArrowLeft')j=(i-1+tabs.length)%tabs.length;if(j>=0){e.preventDefault();tabs[j].focus();sel(tabs[j]);}});});return sel;}
+initTabs($('#expTabs'));
+
+/* donut */
+var comp=[{n:'Су',v:93.5,r:'93–94 %',c:'#06D6A0',t:'Негізгі бөлігі — су. Сондықтан сарысу — сұйық шикізат, ал ирис үшін ұзақ қайнату керек.'},{n:'Лактоза',v:4.8,r:'4,5–5,0 %',c:'#FFC300',t:'Сүт қанты. Қыздырғанда карамельденіп, тағамға қоңыр түс береді.'},{n:'Сарысу ақуыздары',v:.7,r:'0,6–0,8 %',c:'#FF6B6B',t:'Жеңіл сіңетін ақуыздар; қыздырғанда құрылымы өзгереді.'},{n:'Минералдар',v:.65,r:'0,5–0,8 %',c:'#5589B5',t:'Кальций, фосфор, калий, магний тұздары.'},{n:'Сүт майы',v:.35,r:'0,05–0,5 %',c:'#9B7BD0',t:'Аз мөлшерде; ірімшіктің майлылығына байланысты.'}];
+var NS='http://www.w3.org/2000/svg',svg=$('#donut'),acc=0,circles=[],lg=$('#legend'),info=$('#cinfo');
+comp.forEach(function(c,i){var ci=document.createElementNS(NS,'circle');ci.setAttribute('cx','21');ci.setAttribute('cy','21');ci.setAttribute('r','15.9155');ci.setAttribute('stroke',c.c);ci.setAttribute('stroke-dasharray',c.v+' '+(100-c.v));ci.setAttribute('stroke-dashoffset',String(25-acc));ci.setAttribute('transform','rotate(0 21 21)');acc+=c.v;svg.insertBefore(ci,svg.firstChild);circles.push(ci);
+var b=document.createElement('button');b.type='button';b.setAttribute('aria-pressed','false');b.innerHTML='<i style="background:'+c.c+'"></i>'+c.n+'<b>'+c.r+'</b>';lg.appendChild(b);
+function pick(){circles.forEach(function(x,j){x.style.strokeWidth=j===i?'8':'5.5';x.style.opacity=j===i?'1':'.45'});$$('button',lg).forEach(function(x,j){x.setAttribute('aria-pressed',j===i)});info.innerHTML='<b>'+c.n+' — '+c.r+'.</b> '+c.t;}
+b.addEventListener('click',pick);ci.addEventListener('click',pick);});
+
+/* iris calc */
+var L=$('#irisL');function irisCalc(){var v=+L.value;$('#irisLv').textContent=v;$('#irisSugar').textContent=v*100;$('#irisCnt').textContent=Math.round(v*50/3);}L.addEventListener('input',irisCalc);irisCalc();
+
+/* survey */
+var S=JSON.parse($('#survey-data').textContent);
+var gr=$('#groups');S.groups.forEach(function(g){var s=document.createElement('span');s.className='chip';s.style.margin='0';s.textContent=g.label+': '+g.count+' ('+fmt(g.pct)+' %)';gr.appendChild(s)});
+var qt=$('#qTabs'),qb=$('#qBars'),qti=$('#qTitle'),qn=$('#qNote');
+S.questions.forEach(function(q,i){var b=document.createElement('button');b.className='tab';b.setAttribute('role','tab');b.id='qt'+i;b.setAttribute('aria-selected',i===0);b.setAttribute('aria-controls','qBars');b.tabIndex=i===0?0:-1;b.textContent=q.title.replace(/\s*\(.*\)/,'');qt.appendChild(b);});
+function showQ(i){var q=S.questions[i];qti.textContent=q.title;qb.innerHTML='';var max=Math.max.apply(null,q.options.map(function(o){return o.pct}));
+q.options.forEach(function(o){var r=document.createElement('div');r.className='row';r.innerHTML='<span class="l"></span><div class="track"><div class="fill"></div></div>';$('.l',r).textContent=o.label;var f=$('.fill',r);f.textContent=o.count+' ('+fmt(o.pct)+' %)';if(o.pct===max)f.classList.add('top');qb.appendChild(r);requestAnimationFrame(function(){requestAnimationFrame(function(){f.style.width=Math.max(o.pct,6)+'%'})});});
+qn.textContent=q.type==='scale'?'Орташа баға: '+fmt(q.average)+' / 5.':(q.type==='multi'?'Бірнеше жауап таңдауға болатын сұрақ: пайыз қатысушы санынан есептелген, қосындысы 100 %-дан артуы мүмкін.':'')+' '+S.note;}
+var selQ=initTabs(qt);qt.onsel=function(t){showQ(parseInt(t.id.slice(2),10))};showQ(0);
+
+/* quiz */
+var quizQs=[{id:'usage',t:'Үйде сарысуды қайда қолданасың?'},{id:'harm',t:'Сарысуды төгу табиғатқа зиян ба?'},{id:'buy',t:'Сарысудан жасалған өнімді сатып алар ма едің?'}];
+var ans={},qz=$('#quiz'),qr=$('#quizRes'),rb=$('#quizReset');
+function buildQuiz(){qz.innerHTML='';ans={};qr.style.display='none';rb.style.display='none';quizQs.forEach(function(Q){var q=S.questions.filter(function(x){return x.id===Q.id})[0];var d=document.createElement('div');d.className='q';d.innerHTML='<h4></h4><div class="opts"></div>';$('h4',d).textContent=Q.t;q.options.forEach(function(o,k){var b=document.createElement('button');b.type='button';b.className='opt';b.setAttribute('aria-pressed','false');b.textContent=o.label;b.addEventListener('click',function(){$$('.opt',d).forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');ans[Q.id]=k;finish();});$('.opts',d).appendChild(b);});qz.appendChild(d);});}
+function finish(){if(Object.keys(ans).length<quizQs.length)return;var h='<h3>Нәтиже</h3>';quizQs.forEach(function(Q){var q=S.questions.filter(function(x){return x.id===Q.id})[0],o=q.options[ans[Q.id]];h+='<p>• <b>'+Q.t+'</b> — «'+o.label+'»: сенімен бірдей жауап берген <b>'+fmt(o.pct)+' %</b> ('+o.count+' адам).</p>';});qr.innerHTML=h;qr.style.display='block';rb.style.display='inline-flex';qr.scrollIntoView({behavior:reduce?'auto':'smooth',block:'nearest'});}
+rb.addEventListener('click',buildQuiz);buildQuiz();
+
+/* fair */
+function fair(){var cq=+$('#cQty').value,iq=+$('#iQty').value,cp=+$('#cPrice').value||0,ip=+$('#iPrice').value||0;$('#cQtyV').textContent=cq;$('#iQtyV').textContent=iq;var c=cq*cp,i=iq*ip,t=c+i;$('#tot').textContent=t+' теңге';var pc=t?c/t*100:0,pi=t?i/t*100:0;var sc=$('#sC'),si=$('#sI');sc.style.width=pc+'%';si.style.width=pi+'%';sc.textContent=pc>12?'ірімшік '+fmt(pc)+' %':'';si.textContent=pi>12?'ирис '+fmt(pi)+' %':'';$('#sTxt').textContent='Ірімшік: '+c+' ₸ · Ирис конфеті: '+i+' ₸ (сарысудан жасалған өнім)';}
+['cQty','iQty','cPrice','iPrice'].forEach(function(id){$('#'+id).addEventListener('input',fair)});fair();
+
+/* online survey embed (loads only on click) */
+if(SURVEY_URL){var sc=$('#svCard');sc.style.display='';$('#svOpen').href=SURVEY_URL;$('#svLoad').addEventListener('click',function(){var b=$('#svBox');if(b.firstChild)return;var f=document.createElement('iframe');f.className='sv';f.src=SURVEY_URL;f.title='Онлайн сауалнама';f.loading='lazy';b.appendChild(f);this.textContent='Сауалнама ашылды ↓';});}
+/* defence timer */
+(function(){var left=420,tm=null,disp=$('#tdisp'),go=$('#tgo');
+function show(){var m=Math.floor(left/60),s=left%60;disp.textContent=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;disp.style.color=left<=30?'#FF6B6B':'';}
+function stop(){clearInterval(tm);tm=null;go.textContent='Бастау';}
+go.addEventListener('click',function(){if(tm){stop();return;}if(left<=0)left=420;go.textContent='Тоқтату';tm=setInterval(function(){left--;show();if(left<=0)stop();},1000);});
+$('#trs').addEventListener('click',function(){stop();left=420;show();});
+$$('#tpanel button[data-m]').forEach(function(b){b.addEventListener('click',function(){stop();left=parseInt(b.dataset.m,10)*60;show();});});
+$('#tbtn').addEventListener('click',function(){$('#tpanel').classList.toggle('on');});show();})();
+
+/* hero tilt (desktop only, light) */
+var col=$('.collage');if(col&&!reduce&&matchMedia('(hover:hover)').matches){var raf=0;col.addEventListener('pointermove',function(e){if(raf)return;raf=requestAnimationFrame(function(){var r=col.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;col.style.transform='translate3d('+(x*-10)+'px,'+(y*-10)+'px,0)';raf=0;});});col.addEventListener('pointerleave',function(){col.style.transform=''});}
+})();
+</script>
+</body>
+</html>
