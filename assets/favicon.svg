@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Сарысу — жёлтая капля</title>
+  <defs>
+    <linearGradient id="whey" x1="18" y1="16" x2="46" y2="55" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE680"/>
+      <stop offset="1" stop-color="#FFC300"/>
+    </linearGradient>
+    <clipPath id="drop">
+      <path d="M32 5C27 14 11 28 11 40a21 21 0 0 0 42 0C53 28 37 14 32 5Z"/>
+    </clipPath>
+  </defs>
+  <path d="M32 5C27 14 11 28 11 40a21 21 0 0 0 42 0C53 28 37 14 32 5Z" fill="url(#whey)"/>
+  <path d="M9 41c9-8 16-5 23-1s14 6 23-2v25H9Z" fill="#EBA900" clip-path="url(#drop)"/>
+  <path d="M32 5C27 14 11 28 11 40a21 21 0 0 0 42 0C53 28 37 14 32 5Z" fill="none" stroke="#1B4332" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M25 25c-4 5-7 9-7 14" fill="none" stroke="#FFF8D6" stroke-width="5" stroke-linecap="round"/>
+</svg>
